@@ -1,4 +1,4 @@
-# NFS Lua toolkit
+# NFS Lua Tools
  Lua compiler and decompiler for Need for Speed BlackBox\
  Based on Hisham Muhammad decompiler with some fixes for NFS Bytecode.\
  Use Win32 version, because NFS is 32bit app.
