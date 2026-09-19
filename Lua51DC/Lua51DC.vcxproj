@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\lapi.c" />
+    <ClCompile Include="..\shared\lauxlib.c" />
+    <ClCompile Include="..\shared\lcode.c" />
+    <ClCompile Include="..\shared\ldebug.c" />
+    <ClCompile Include="..\shared\ldo.c" />
+    <ClCompile Include="..\shared\ldump.c" />
+    <ClCompile Include="..\shared\lfunc.c" />
+    <ClCompile Include="..\shared\lgc.c" />
+    <ClCompile Include="..\shared\llex.c" />
+    <ClCompile Include="..\shared\lmem.c" />
+    <ClCompile Include="..\shared\lobject.c" />
+    <ClCompile Include="..\shared\lopcodes.c" />
+    <ClCompile Include="..\shared\lparser.c" />
+    <ClCompile Include="..\shared\lstate.c" />
+    <ClCompile Include="..\shared\lstring.c" />
+    <ClCompile Include="..\shared\ltable.c" />
+    <ClCompile Include="..\shared\ltests.c" />
+    <ClCompile Include="..\shared\ltm.c" />
+    <ClCompile Include="..\shared\lundump.c" />
+    <ClCompile Include="..\shared\lvm.c" />
+    <ClCompile Include="..\shared\lzio.c" />
+    <ClCompile Include="luadec.c" />
+    <ClCompile Include="output.c" />
+    <ClCompile Include="print.c" />
+    <ClCompile Include="proto.c" />
+    <ClCompile Include="StringBuffer.c" />
+    <ClCompile Include="structs.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\lapi.h" />
+    <ClInclude Include="..\shared\lauxlib.h" />
+    <ClInclude Include="..\shared\lcode.h" />
+    <ClInclude Include="..\shared\ldebug.h" />
+    <ClInclude Include="..\shared\ldo.h" />
+    <ClInclude Include="..\shared\lfunc.h" />
+    <ClInclude Include="..\shared\lgc.h" />
+    <ClInclude Include="..\shared\llex.h" />
+    <ClInclude Include="..\shared\llimits.h" />
+    <ClInclude Include="..\shared\lmem.h" />
+    <ClInclude Include="..\shared\lobject.h" />
+    <ClInclude Include="..\shared\lopcodes.h" />
+    <ClInclude Include="..\shared\lparser.h" />
+    <ClInclude Include="..\shared\lstate.h" />
+    <ClInclude Include="..\shared\lstring.h" />
+    <ClInclude Include="..\shared\ltable.h" />
+    <ClInclude Include="..\shared\ltm.h" />
+    <ClInclude Include="..\shared\lua.h" />
+    <ClInclude Include="..\shared\lualib.h" />
+    <ClInclude Include="..\shared\lundump.h" />
+    <ClInclude Include="..\shared\lvm.h" />
+    <ClInclude Include="..\shared\lzio.h" />
+    <ClInclude Include="output.h" />
+    <ClInclude Include="print.h" />
+    <ClInclude Include="proto.h" />
+    <ClInclude Include="StringBuffer.h" />
+    <ClInclude Include="structs.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fd96b41a-2e6c-4b29-ad6d-5aa298828c3e}</ProjectGuid>
+    <RootNamespace>Lua51DC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+    <IncludePath>$(ProjectDir)..\shared\;$(IncludePath)</IncludePath>
+    <TargetName>luadec</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(OutDir)$(ProjectName)\</IntDir>
+    <IncludePath>$(ProjectDir)..\shared\;$(IncludePath)</IncludePath>
+    <TargetName>luadec</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LUA_OPNAMES;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LUA_OPNAMES;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

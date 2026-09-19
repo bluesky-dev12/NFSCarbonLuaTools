@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="proto.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StringBuffer.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="luadec.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="output.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lfunc.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lgc.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\llex.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lmem.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lobject.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lopcodes.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lparser.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lstate.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lstring.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ltable.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ltests.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ltm.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lundump.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lvm.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lzio.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lapi.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lauxlib.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lcode.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ldebug.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ldo.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ldump.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="print.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\lstring.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ltable.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ltm.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lua.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lualib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lundump.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lvm.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lzio.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lapi.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lauxlib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lcode.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ldebug.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ldo.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lfunc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lgc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\llex.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\llimits.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lmem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lobject.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lopcodes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lparser.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lstate.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="print.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="proto.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StringBuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="output.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
